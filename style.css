@@ -1,1 +1,312 @@
+/* ESTILOS GERAIS - IDENTIDADE VISUAL: Azul, Verde, Roxo e Preto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #111; /* Preto suave */
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Botão de Acessibilidade (fixo) */
+.botao-acessibilidade {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #2c3e50;
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.botao-acessibilidade button {
+    background: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.botao-acessibilidade button:hover {
+    transform: scale(1.05);
+}
+
+/* Header / Cabeçalho */
+header {
+    background: linear-gradient(135deg, #1a3c2c, #0e2a1e); /* Verde escuro */
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+header h1 span {
+    color: #9b59b6; /* Roxo para destaque */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #9b59b6;
+}
+
+/* Seções comuns */
+section {
+    padding: 60px 0;
+}
+
+.card {
+    background: white;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.bg-claro {
+    background-color: #eef5f0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #1a3c2c;
+    border-left: 5px solid #9b59b6;
+    padding-left: 15px;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(rgba(26,60,44,0.8), rgba(26,60,44,0.8)), url('https://via.placeholder.com/1600x600?text=Campo+e+Tecnologia') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 0;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: white;
+    border-left: none;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.botao-principal {
+    display: inline-block;
+    background: #9b59b6;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.botao-principal:hover {
+    background: #8e44ad;
+    transform: scale(1.02);
+}
+
+/* Grid de ajuda */
+.grid-ajuda {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.item-ajuda {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    border-top: 4px solid #9b59b6;
+}
+
+.item-ajuda h3 {
+    color: #1a3c2c;
+    margin-bottom: 15px;
+}
+
+/* Simulador interativo */
+.simulador-botoes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.botao-simulador {
+    background: #1a3c2c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+.botao-simulador:hover {
+    background: #9b59b6;
+    transform: scale(1.05);
+}
+
+.resultado-simulador {
+    background: #f0f0f0;
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 20px;
+    text-align: center;
+    border-left: 5px solid #9b59b6;
+    font-size: 1.1rem;
+}
+
+.nota-tecnica {
+    margin-top: 15px;
+    color: #555;
+}
+
+/* Benefícios lista */
+#beneficios ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#beneficios li {
+    background: white;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Rodapé */
+footer {
+    background: #0e2a1e;
+    color: #ccc;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+/* Responsividade (Celular) */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        justify-content: center;
+        margin-top: 15px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .botao-acessibilidade {
+        bottom: 10px;
+        right: 10px;
+        padding: 5px;
+    }
+    
+    .botao-acessibilidade button {
+        padding: 5px 10px;
+    }
+    
+    .grid-ajuda {
+        flex-direction: column;
+    }
+}
+
+/* Classe para Alto Contraste (ativada via JS) */
+.alto-contraste {
+    background-color: black !important;
+    color: yellow !important;
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .card,
+.alto-contraste .item-ajuda,
+.alto-contraste .resultado-simulador {
+    background-color: black !important;
+    color: yellow !important;
+    border-color: yellow !important;
+}
+
+.alto-contraste a,
+.alto-contraste button {
+    color: yellow !important;
+    background-color: #222 !important;
+}
+
+.alto-contraste .botao-principal {
+    background-color: #444 !important;
+}
+
+/* Controle de fonte via JS (as classes serão adicionadas no body) */
+.fonte-pequena {
+    font-size: 14px;
+}
+
+.fonte-normal {
+    font-size: 18px;
+}
+
+.fonte-grande {
+    font-size: 22px;
+}
