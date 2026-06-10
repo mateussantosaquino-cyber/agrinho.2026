@@ -1,1 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>TECAgros - Tecnologia para um Agro Sustentável</title>
+    <!-- CSS será linkado aqui. O arquivo style.css deve estar na mesma pasta -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- Botão de Acessibilidade fixo (obrigatório) -->
+    <div class="botao-acessibilidade" id="acessibilidade">
+        <button id="btnAumentarFonte" aria-label="Aumentar fonte">A+</button>
+        <button id="btnDiminuirFonte" aria-label="Diminuir fonte">A-</button>
+        <button id="btnAltoContraste" aria-label="Ativar alto contraste">🎨 Contraste</button>
+    </div>
+
+    <!-- Cabeçalho do site -->
+    <header>
+        <div class="container">
+            <h1>TEC<span>Agros</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#problema">Problema</a></li>
+                    <li><a href="#tecnologia">Tecnologia</a></li>
+                    <li><a href="#simulador">Simulador</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#conclusao">Conclusão</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Seção Inicial (Hero) -->
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h2>Agro Forte, Futuro Sustentável</h2>
+                <p>Descubra como a tecnologia está revolucionando a agricultura, o agronegócio e a agropecuária para equilibrar produção e meio ambiente.</p>
+                <a href="#simulador" class="botao-principal">Experimente o Simulador</a>
+            </div>
+        </section>
+
+        <!-- Seção: Problema abordado -->
+        <section id="problema" class="card">
+            <div class="container">
+                <h2>O Problema que Investigamos</h2>
+                <article>
+                    <p><strong>Falta de conhecimento tecnológico no campo:</strong> Muitos produtores e a população em geral ainda desconhecem como a tecnologia pode reduzir desperdícios, proteger o meio ambiente e aumentar a produtividade de forma sustentável. Sem essa informação, práticas antigas e prejudiciais continuam sendo usadas.</p>
+                    <p>Por isso, o <strong>TECAgros</strong> foi criado para mostrar, de forma simples, soluções tecnológicas para cada tipo de agro.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção: Como a tecnologia ajuda (conteúdo educativo) -->
+        <section id="tecnologia" class="card bg-claro">
+            <div class="container">
+                <h2>🌱 Como a Tecnologia Ajuda os Agros?</h2>
+                <div class="grid-ajuda">
+                    <div class="item-ajuda">
+                        <h3>Agricultura</h3>
+                        <p>Sensores de umidade do solo e drones reduzem o uso de água em até 40%, irrigando apenas onde e quando necessário.</p>
+                    </div>
+                    <div class="item-ajuda">
+                        <h3>Agronegócio</h3>
+                        <p>Softwares de gestão e rastreabilidade evitam desperdícios na colheita e transporte, diminuindo a emissão de carbono.</p>
+                    </div>
+                    <div class="item-ajuda">
+                        <h3>Agropecuária</h3>
+                        <p>Brinculos inteligentes monitoram a saúde do gado, evitando doenças e o uso excessivo de remédios, protegendo o solo e a água.</p>
+                    </div>
+                </div>
+                <!-- Ilustração autoral (texto criado por mim baseado no seu planejamento) -->
+                <div class="ilustracao-autoral">
+                    <p>✨ <strong>Ilustração autoral:</strong> Imagine um drone voando sobre uma plantação, um tablet mostrando gráficos de sustentabilidade e uma vaca com um colar tecnológico. Essa é a visão do TECAgros!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Funcionalidade Interativa (Simulador dos 3 tipos de agro) -->
+        <section id="simulador" class="card">
+            <div class="container">
+                <h2>🚀 Simulador TECAgros</h2>
+                <p>Escolha um tipo de agro e veja qual tecnologia sustentável é indicada:</p>
+                
+                <div class="simulador-botoes">
+                    <button class="botao-simulador" data-tipo="agricultura">🌾 Agricultura</button>
+                    <button class="botao-simulador" data-tipo="agronegocio">📈 Agronegócio</button>
+                    <button class="botao-simulador" data-tipo="agropecuaria">🐄 Agropecuária</button>
+                </div>
+
+                <!-- Área onde o resultado da simulação aparecerá -->
+                <div class="resultado-simulador" id="resultadoSimulador">
+                    <p>👆 Clique em uma opção acima para simular a tecnologia ideal.</p>
+                </div>
+                <p class="nota-tecnica"><small>💡 Funcionalidade interativa: cada escolha exibe uma tecnologia diferente e seu impacto sustentável.</small></p>
+            </div>
+        </section>
+
+        <!-- Seção: Benefícios da tecnologia (conteúdo extra) -->
+        <section id="beneficios" class="card bg-claro">
+            <div class="container">
+                <h2>Benefícios Diretos para o Meio Ambiente</h2>
+                <ul>
+                    <li>💧 <strong>Redução do desperdício de água</strong> em até 50% com irrigação inteligente.</li>
+                    <li>🌎 <strong>Menos poluição do solo e rios</strong> com uso controlado de defensivos.</li>
+                    <li>🌿 <strong>Preservação da biodiversidade</strong> através do monitoramento de áreas nativas.</li>
+                    <li>📉 <strong>Diminuição da emissão de gases</strong> com otimização de rotas no agronegócio.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seção Conclusão -->
+        <section id="conclusao" class="card">
+            <div class="container">
+                <h2>Conclusão: O Futuro é Tecnológico e Sustentável</h2>
+                <article>
+                    <p>A tecnologia não é inimiga da natureza. Pelo contrário: quando bem aplicada, ela é a maior aliada do produtor rural para produzir mais e melhor, respeitando o meio ambiente. O <strong>TECAgros</strong> acredita que com informação e inovação, podemos ter um agro forte e um futuro sustentável para todos.</p>
+                    <p><strong>#AgroForte #FuturoSustentável #TECAgros</strong></p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>Projeto desenvolvido para o <strong>Concurso Agrinho 2026</strong> - Tema: Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente.</p>
+            <p>© 2026 - TECAgros | Tecnologia e Inovação no Agro</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript será linkado aqui -->
+    <script src="script.js"></script>
+</body>
+</html>
